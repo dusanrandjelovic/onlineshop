@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shop upgrade</title>
+    <style>
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(252, 247, 247, .7), rgba(253, 236, 236, .7)), url("slika2.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  color: black;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.korpica span {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border-radius: 45%;
+  margin-left: -20px;
+  margin-top: -10px;
+}
+main {
+  margin: 2% 3%;
+}
+.grupa {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.grupa div {
+  padding-top: 50px;
+}
+.slikarobe {
+  height: 170px;
+  width: 200px;
+}
+.dole {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 8%;
+
+}
+.dole a {
+  border: 1px solid green;
+  padding: 7px;
+  color: green;
+  text-decoration: none;
+}
+.dole a:hover {
+  background: green;
+  color: white;
+}
+.dole h3 {
+  width: 60%;
+}
+.dole h4 {
+  letter-spacing: 0.02em,
+}
+@media (min-width: 800px){
+  header {
+    flex-direction: row;
+  }
+  .grupa {
+    flex-direction: row;
+  }
+  .grupa div {
+    padding: 1% 2%;
+    width: 30%;
+  }
+}
+@media (min-width: 1200px){
+  header {
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+  .grupa {
+    flex-direction: row;
+  }
+  .grupa div {
+    padding: 1% 2%;
+    width: 18%;
+    border-left: 1px solid green;
+  }
+  .grupa .prviproizvod {
+    border: none;
+  }
+  .dole h3 {
+    width: 90%;
+  }
+}
+
+      </style>
+  </head>
+  <body>
+    <header>
+
+  <h2>Online Shop by Dušan Ranđelović</h2>
+    <div class="korpica">
+     <a href="index2.html"><img src="https://cdn.pixabay.com/photo/2016/12/12/13/23/shopping-cart-1901584__340.png"
+     height="70"></a>  <span id="proizvodi">0</span>
+   </div>
+  </header>
+
+    <main>
+
+<div class="grupa">
+      <div class="prviproizvod">
+        <img src="sl1.jpg" class="slikarobe">
+          <h2>Roze majica</h2>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+          <p>Cena: <span id="cena1">500</span> RSD</p>
+            Kolicina: <input type="number" id="kol1" min=0 value=0>
+          </div>
+
+            <div>
+              <img src="sl2.jpg" class="slikarobe">
+                <h2>Džemper za zimu</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                   dolore magna aliqua.</p>
+                <p>Cena: <span id="cena2">600</span> RSD</p>
+                <span>Kolicina: </span><input type="number" id="kol2" min=0 value=0>
+                </div>
+
+                  <div>
+                    <img src="sl3.jpg" class="slikarobe">
+                      <h2>Majice</h2>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</p>
+                      <p>Cena: <span id="cena3">900</span> RSD</p>
+                      <span>Kolicina: <input type="number" id="kol3" min=0 value=0></span>
+                      </div>
+
+                        <div>
+                        <img src="sl4.jpg" class="slikarobe">
+                            <h2>Majica od pamuka</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                               dolore magna aliqua.</p>
+                            <p>Cena: <span id="cena4">750</span> RSD</p>
+                            Kolicina: <input type="number" id="kol4" min=0 value=0>
+                            </div>
+</div>
+<div class="dole">
+<h3>Račun je: <span id="prostor"></span></h3>
+<h4><a href="index2.html">Naruči</a></h4>
+
+</div>
+</main>
+
+<!--td:nth-child(3) stilizujem trecu kolonu-->
+<!--<div class="dole">
+<h1>Ukupno: </h1><input id="ukupno">RSD
+</div>
+<button id="dugme">Dugme</button>-->
+
+
+<script src="main.js"></script>
+  </body>
+</html>

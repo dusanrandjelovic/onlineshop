@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Narucivanje</title>
+    <style>
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(252, 247, 247, .7), rgba(253, 236, 236, .7)), url("slika2.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  color: black;
+}
+form {
+  margin-top: 9%;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 3% 11%;
+}
+.uplata {
+  margin: 3% 6%;
+}
+label{
+  line-height: 1.5em;
+}
+input{
+  padding: 8px;
+}
+button {
+  padding: 8px;
+  width: 18%;
+  display: block;
+  margin: auto;
+  outline-width: inherit;
+  color: white;
+  background: green;
+  border: 1px solid green;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+button:hover {
+  cursor: pointer;
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+}
+button:active {
+  padding: 12px;
+}
+@media (min-width: 600px){
+form {
+  width: 60%;
+  margin: 3% auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+form div {
+  flex-direction: row;
+  align-items: center;
+  margin: 3% 6%;
+}
+label {
+  width: 26%;
+}
+input {
+  width: 59%;
+}
+}
+@media (min-width: 1000px){
+  form{
+    width: 45%;
+    margin: 3% auto;
+
+  }
+  form div {
+    flex-direction: row;
+    align-items: center;
+    margin: 3% 6%;
+  }
+  label {
+    width: 29%;
+  }
+  input {
+    width: 60%;
+  }
+}
+      </style>
+  </head>
+  <body>
+    <div class="uplata">
+    <h1>Narudžbina</h1>
+    <h3>Uplata se vrši na račun u banci ili paypal račun. Posle uplate stići će vam željeni proizvodi.</h3>
+    </div>
+    <form action="https://formspree.io/dusanrandjelovic92@gmail.com" method="post">
+
+      <div>
+        <label for="ime">Ime i prezime: </label>
+        <input id="ime" name="ime" minlength="4" required>
+        </div>
+
+        <div>
+          <label for="adresa">Adresa: </label>
+          <input id="adresa" name="adresa" required>
+          </div>
+
+          <div>
+            <label for="telefon">Telefon: </label>
+            <input id="telefon" name="telefon" placeholder="+381">
+            </div>
+
+            <div>
+              <label for="email">Email: </label>
+              <input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+              </div>
+
+              <div class="cene">
+
+                <span id="ispis1n" ></span><span id="ispis2n"></span><span id="ispis3n"></span> <span id="ispis4n"></span>
+              </div>
+
+              <div>
+                  <span id="iznos"></span>
+                </div>
+<div>
+<button>Kupi</button>
+</div>
+      </form>
+
+      <!--<button id="dugme">Pogledaj racun</button>
+      <p id="naruc"></p>-->
+
+
+    <script src="main2.js"></script>
+  </body>
+</html>
