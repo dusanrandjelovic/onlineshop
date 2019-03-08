@@ -34,17 +34,24 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-top: 2px solid black;
-  border-bottom: 1px solid black;
   justify-content: center;
   align-items: center;
   padding: 2%;
 }
+.goreborder {
+  border-top: 2px solid black;
+}
+.doleborder {
+  border-bottom: 1px solid black;
+}
 .grupa div {
   padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 .slikarobe {
-  height: 170px;
+  height: auto;
   width: 200px;
 }
 .dole {
@@ -80,6 +87,7 @@ main {
   .grupa div {
     padding: 1% 2%;
     width: 30%;
+    margin: 0.5% 3%;
   }
 }
 @media (min-width: 1200px){
@@ -95,6 +103,7 @@ main {
     padding: 1% 2%;
     width: 18%;
     border-left: 1px solid green;
+    margin: 0;
   }
   .grupa .prviproizvod {
     border: none;
@@ -118,41 +127,79 @@ main {
 
     <main>
 
-<div class="grupa">
+<div class="grupa goreborder">
       <div class="prviproizvod">
-        <img src="sl1.jpg" class="slikarobe">
-          <h2>Roze majica</h2>
+        <img src="zenfarm1.jpg" class="slikarobe">
+          <h2>Ženske farmerke</h2>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
           commodo consequat.</p>
           <p>Cena: <span id="cena1">500</span> RSD</p>
-            Kolicina: <input type="number" id="kol1" min=0 value=0>
+            Količina: <input type="number" id="kol1" min=0 value=0>
           </div>
 
             <div>
-              <img src="sl2.jpg" class="slikarobe">
-                <h2>Džemper za zimu</h2>
+              <img src="musfarm1.jpg" class="slikarobe">
+                <h2>Muške farmerke</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                    dolore magna aliqua.</p>
                 <p>Cena: <span id="cena2">600</span> RSD</p>
-                <span>Kolicina: </span><input type="number" id="kol2" min=0 value=0>
+                <span>Količina: </span><input type="number" id="kol2" min=0 value=0>
                 </div>
 
                   <div>
-                    <img src="sl3.jpg" class="slikarobe">
-                      <h2>Majice</h2>
+                    <img src="roba3.jpg" class="slikarobe">
+                      <h2>Sive patike</h2>
                       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                       commodo consequat.</p>
                       <p>Cena: <span id="cena3">900</span> RSD</p>
-                      <span>Kolicina: <input type="number" id="kol3" min=0 value=0></span>
+                      <span>Količina: <input type="number" id="kol3" min=0 value=0></span>
                       </div>
 
                         <div>
-                        <img src="sl4.jpg" class="slikarobe">
-                            <h2>Majica od pamuka</h2>
+                        <img src="roba4.jpg" class="slikarobe">
+                            <h2>Plave patike</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                                dolore magna aliqua.</p>
                             <p>Cena: <span id="cena4">750</span> RSD</p>
-                            Kolicina: <input type="number" id="kol4" min=0 value=0>
+                            Količina: <input type="number" id="kol4" min=0 value=0>
+                            </div>
+</div>
+
+<div class="grupa doleborder">
+      <div class="prviproizvod">
+        <img src="roba5.jpg" class="slikarobe">
+          <h2>Crna majica</h2>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+          <p>Cena: <span id="cena5">500</span> RSD</p>
+            Količina: <input type="number" id="kol5" min=0 value=0>
+          </div>
+
+            <div>
+              <img src="roba6.jpg" class="slikarobe">
+                <h2>Narukvica</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                   dolore magna aliqua.</p>
+                <p>Cena: <span id="cena6">600</span> RSD</p>
+                <span>Količina: </span><input type="number" id="kol6" min=0 value=0>
+                </div>
+
+                  <div>
+                    <img src="roba7.jpg" class="slikarobe">
+                      <h2>Braon torba</h2>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</p>
+                      <p>Cena: <span id="cena7">900</span> RSD</p>
+                      <span>Količina: <input type="number" id="kol7" min=0 value=0></span>
+                      </div>
+
+                        <div>
+                        <img src="roba8.jpg" class="slikarobe">
+                            <h2>Plave farmerice</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                               dolore magna aliqua.</p>
+                            <p>Cena: <span id="cena8">750</span> RSD</p>
+                            Količina: <input type="number" id="kol8" min=0 value=0>
                             </div>
 </div>
 <div class="dole">
